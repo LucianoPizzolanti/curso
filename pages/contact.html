@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto - ROPA</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <h1>ROPA</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Beginning</a></li>
+        <li><a href="collections.html">Collections</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="service.html">Services</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <section>
+      <h2>Contact</h2>
+      <form action="#" method="post">
+        <label for="nombre">Name:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="mensaje">Message:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
+
+        <input type="submit" value="Send">
+      </form>
+
+      <p><strong>Phone number:</strong> +598 *********</p>
+      <hr>
+
+      <h3>Upload a file</h3>
+      <form action="subir.php" method="post" enctype="multipart/form-data">
+        <label for="archivo">Select file:</label>
+        <input type="file" id="archivo" name="archivo" required>
+        <input type="submit" value="Upload File">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ROPA. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
