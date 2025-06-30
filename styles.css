@@ -4,26 +4,34 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* Paleta de colores */
+:root {
+  --color-primario: rgb(134, 43, 219);
+  --color-secundario: rgb(102, 51, 153);
+  --color-fondo: #f5f5f5;
+  --color-texto: #333333;
+  --color-acento: #ff6f61; 
+}
 
 /* Estilos generales */
 body {
-  background-color: #e0e0e0;
+  background-color:var(--color-fondo);
   font-family: Arial, Helvetica, sans-serif;
-  color: #333;
+  color:var(--color-texto);
   line-height: 1.6;
 }
 
 /* Encabezado */
 header {
-  background-color: whitesmoke;
+  background-color: var(--color-fondo);
   padding: 20px;
   text-align: center;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid var(--color-fondo);
 }
 
 header h1 {
   font-size: 2.5rem;
-  color: #333;
+  color: var(--color-texto);
 }
 
 /* Navegación */
@@ -42,7 +50,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: blueviolet;
+  color: var(--color-primario);
   text-decoration: none;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 1.1rem;
@@ -52,11 +60,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #ddd;
+  background-color: var(--color-acento);
+  color: white;
 }
 
 /* Main content */
 main {
+  max-width: 1200px;
+  margin: auto;
   padding: 20px;
 }
 
@@ -85,7 +96,7 @@ article img {
 }
 
 .team-member {
-  background-color: white;
+  background-color: var(--color-fondo);
   padding: 15px;
   border-radius: 10px;
   width: 200px;
@@ -96,7 +107,7 @@ article img {
 /* Formulario (contact.html) */
 form {
   margin-top: 20px;
-  background-color: white;
+  background-color: var(--color-fondo);
   padding: 20px;
   border-radius: 8px;
   max-width: 500px;
@@ -123,7 +134,7 @@ form input[type="file"] {
 }
 
 form input[type="submit"] {
-  background-color: blueviolet;
+  background-color:var(--color-primario);
   color: white;
   padding: 10px 20px;
   border: none;
@@ -132,12 +143,12 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-  background-color: rebeccapurple;
+  background-color: var(--color-secundario);
 }
 
 /* Footer */
 footer {
-  background-color: whitesmoke;
+  background-color: var(--color-fondo);
   text-align: center;
   padding: 20px;
   margin-top: 40px;
@@ -145,3 +156,32 @@ footer {
   font-size: 0.9rem;
 }
 
+/* Personalización de Navbar */
+.navbar {
+  background-color: var(--color-primario) !important;
+}
+.navbar-nav .nav-link {
+  color: white !important;
+}
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.navbar-nav .nav-link:hover {
+  background-color: var(--color-secundario);
+  border-radius: 4px;
+}
+
+/* Media query para móviles */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .team-members {
+    flex-direction: column;
+  }
+}
