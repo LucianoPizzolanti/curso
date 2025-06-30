@@ -3,44 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <title>Inicio - ROPA</title>
-  <link rel="stylesheet" href="styles.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Encabezado con navegación -->
-  <header>
-    <div class="header-container">
-      <h1>ROPA</h1>
-      <nav>
-        <ul class="nav-menu">
-          <li><a href="index.html">Beginning</a></li>
-          <li><a href="pages/collections.html">Collections</a></li>
-          <li><a href="pages/about.html">About Us</a></li>
-          <li><a href="pages/contact.html">Contact Us</a></li>
-          <li><a href="pages/service.html">Services</a></li>
+  <!-- Navbar Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">ROPA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Beginning</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/collections.html">Collections</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/contact.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/service.html">Services</a></li>
         </ul>
-      </nav>
+      </div>
     </div>
-  </header>
+  </nav>
+
   <!-- Contenido principal -->
-  <main>
-    <section>
-      <h2>Welcome to ROPA</h2>
-      <iframe width="100%" height="300" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video de muestra"></iframe>
+  <main class="container">
+    <section class="mb-5">
+      <h2 class="text-center mb-4">Welcome to ROPA</h2>
+      <div class="ratio ratio-16x9">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video de muestra"></iframe>
+      </div>
     </section>
 
-    <section class="gallery">
-      <article><img src="imagen1.jpg" alt="imagen 1" width="200"><p>New arrivals</p></article>
-      <article><img src="imagen2.jpg" alt="imagen 2" width="200"><p>Seasonal picks</p></article>
-      <article><img src="imagen3.jpg" alt="imagen 3" width="200"><p>Popular items</p></article>
-      <article><img src="imagen4.jpg" alt="imagen 4" width="200"><p>Limited edition</p></article>
+    <section>
+      <h3 class="text-center mb-4">Highlights</h3>
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="card h-100 text-center">
+            <img src="img/imagen1.jpg" class="card-img-top" alt="Imagen 1">
+            <div class="card-body">
+              <p class="card-text">New arrivals</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100 text-center">
+            <img src="img/imagen2.jpg" class="card-img-top" alt="Imagen 2">
+            <div class="card-body">
+              <p class="card-text">Seasonal picks</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100 text-center">
+            <img src="img/imagen3.jpg" class="card-img-top" alt="Imagen 3">
+            <div class="card-body">
+              <p class="card-text">Popular items</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100 text-center">
+            <img src="img/imagen4.jpg" class="card-img-top" alt="Imagen 4">
+            <div class="card-body">
+              <p class="card-text">Limited edition</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-  <!-- Pie de página -->
-  <footer>
+  <!-- Footer -->
+  <footer class="bg-light text-center py-3 mt-5">
     <p>&copy; 2025 ROPA. All rights reserved.</p>
   </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
