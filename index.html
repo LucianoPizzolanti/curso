@@ -2,81 +2,89 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Inicio - ROPA</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ROPA - Inicio</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <!-- Navbar Bootstrap -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html">ROPA</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <a class="navbar-brand fw-bold fs-3" href="#">ROPA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Beginning</a></li>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-3">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="pages/collections.html">Collections</a></li>
           <li class="nav-item"><a class="nav-link" href="pages/about.html">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="pages/contact.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/contact.html">Contact</a></li>
           <li class="nav-item"><a class="nav-link" href="pages/service.html">Services</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Contenido principal -->
-  <main class="container">
-    <section class="mb-5">
-      <h2 class="text-center mb-4">Welcome to ROPA</h2>
-      <div class="ratio ratio-16x9">
-        <iframe src="https://www.youtube.com/watch?v=_2zoIHTWd00" title="Video de muestra"></iframe>
-      </div>
-    </section>
+  <!-- Hero Section -->
+  <header class="hero-section d-flex align-items-center justify-content-center text-white text-center">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1 class="display-3 fw-bold">New Season, New You</h1>
+      <p class="lead">Elegance redefined. Discover the latest fashion trends.</p>
+      <a href="pages/collections.html" class="btn btn-outline-light mt-3">Shop the Collection</a>
+    </div>
+  </header>
 
-    <section>
-      <h3 class="text-center mb-4">Highlights</h3>
-      <div class="row g-4">
-        <div class="col-md-3">
-          <div class="card h-100 text-center">
-            <img src="img/imagen1.jpg" class="card-img-top" alt="Imagen 1">
-            <div class="card-body">
-              <p class="card-text">New arrivals</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card h-100 text-center">
-            <img src="img/imagen2.jpg" class="card-img-top" alt="Imagen 2">
-            <div class="card-body">
-              <p class="card-text">Seasonal picks</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card h-100 text-center">
-            <img src="img/imagen3.jpg" class="card-img-top" alt="Imagen 3">
-            <div class="card-body">
-              <p class="card-text">Popular items</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card h-100 text-center">
-            <img src="img/imagen4.jpg" class="card-img-top" alt="Imagen 4">
-            <div class="card-body">
-              <p class="card-text">Limited edition</p>
-            </div>
+  <!-- Highlighted Collections -->
+  <main class="container py-5">
+    <h2 class="text-center mb-5">Featured Collections</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card border-0 shadow-lg">
+          <img src="img/curso html pantalon de lino.jpg" class="card-img-top" alt="Pantalon de lino">
+          <div class="card-body text-center">
+            <h5 class="card-title">linen trouser</h5>
+            <p class="card-text">vibrant and iconic.</p>
           </div>
         </div>
       </div>
-    </section>
+      <div class="col-md-4">
+        <div class="card border-0 shadow-lg">
+          <img src="img/vestido-de-verano-curso-html.webp" class="card-img-top" alt="Vestido de Verano">
+          <div class="card-body text-center">
+            <h5 class="card-title">Summer Dress</h5>
+            <p class="card-text">Breezy elegance for any occasion.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card border-0 shadow-lg">
+          <img src="img/camisa-de-lino-curso-html.webp" class="card-img-top" alt="Zapatillas Lona">
+          <div class="card-body text-center">
+            <h5 class="card-title">linen shirt</h5>
+            <p class="card-text">fresh, light, and elegant for any occasion.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
+  <!-- Video Section -->
+  <section class="bg-dark py-5">
+    <div class="container text-white text-center">
+      <h3 class="mb-4">Watch Our Runway</h3>
+      <div class="ratio ratio-16x9">
+       <iframe src="https://www.youtube.com/embed/yESEYUo7zUM?start=12" title="Video de muestra" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer -->
-  <footer class="bg-light text-center py-3 mt-5">
-    <p>&copy; 2025 ROPA. All rights reserved.</p>
+  <footer class="bg-black text-white text-center py-4">
+    <p class="mb-0">&copy; 2025 ROPA. All rights reserved.</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

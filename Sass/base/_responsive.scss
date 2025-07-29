@@ -1,0 +1,15 @@
+// Responsive
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 20px;
+  }
+
+  h2, h3 {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}

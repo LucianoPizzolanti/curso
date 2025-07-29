@@ -1,0 +1,18 @@
+// _navbar.scss
+.navbar {
+  background-color: $color-primario !important;
+
+  .nav-link {
+    color: $color-fondo !important;
+
+    &.active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    &:hover {
+      background-color: $color-secundario;
+      border-radius: 4px;
+    }
+  }
+}
